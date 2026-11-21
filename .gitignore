@@ -1,0 +1,16 @@
+# Downloads (HDR+ dataset, ~3 GB): re-fetch with scripts/download_subset.py
+data/
+# Large generated binaries (re-create with python/step1_reference.py)
+out/golden/
+# Previews of dataset scenes (some show people); curated images live in docs/
+out/step1/
+*.gputrace
+# Environments and build products
+.venv/
+swift/.build/
+build/
+__pycache__/
+*.pyc
+.DS_Store
+# Local Claude Code settings
+.claude/

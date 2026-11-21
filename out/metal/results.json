@@ -1,0 +1,156 @@
+{
+  "device" : "Apple M5",
+  "errors" : {
+    "v1" : [
+      2.3841858e-07,
+      4.888976e-07,
+      6.6995525e-09
+    ],
+    "v2" : [
+      0.00031769276,
+      0.0007278286,
+      1.23348955e-05
+    ],
+    "v2h" : [
+      0.00062453747,
+      0.0013232714,
+      2.1002703e-05
+    ],
+    "v3" : [
+      0.000900507,
+      0.0016218183,
+      2.5683912e-05
+    ]
+  },
+  "golden" : "0006_20160722_115157_431",
+  "rows" : [
+    {
+      "bytesPerPx" : 4,
+      "gbs" : 129.023194204906,
+      "kernel" : "copy u16 (roofline)",
+      "ms" : 0.3810083318967372,
+      "pctPeak" : 84.32888510124575,
+      "res" : "12MP"
+    },
+    {
+      "bytesPerPx" : 6,
+      "gbs" : 114.14902563710856,
+      "kernel" : "BLC pass only",
+      "ms" : 0.6459833326516673,
+      "pctPeak" : 74.60720629876377,
+      "res" : "12MP"
+    },
+    {
+      "bytesPerPx" : 8,
+      "gbs" : 64.86842220069168,
+      "kernel" : "v1 naive LSC pass",
+      "ms" : 1.5156499983277172,
+      "pctPeak" : 42.39766156907953,
+      "res" : "12MP"
+    },
+    {
+      "bytesPerPx" : 8,
+      "gbs" : 85.8355470979522,
+      "kernel" : "v2 sampler LSC pass",
+      "ms" : 1.1454208346549422,
+      "pctPeak" : 56.1016647699034,
+      "res" : "12MP"
+    },
+    {
+      "bytesPerPx" : 8,
+      "gbs" : 88.59091126578187,
+      "kernel" : "v2h sampler fp16 tex",
+      "ms" : 1.109795831143856,
+      "pctPeak" : 57.90255638286397,
+      "res" : "12MP"
+    },
+    {
+      "bytesPerPx" : 14,
+      "gbs" : 82.87022257656571,
+      "kernel" : "v1 pipeline BLC+LSC",
+      "ms" : 2.076212500105612,
+      "pctPeak" : 54.16354416769,
+      "res" : "12MP"
+    },
+    {
+      "bytesPerPx" : 14,
+      "gbs" : 85.1141824871607,
+      "kernel" : "v2 pipeline BLC+LSC",
+      "ms" : 2.0214749994920567,
+      "pctPeak" : 55.63018463213118,
+      "res" : "12MP"
+    },
+    {
+      "bytesPerPx" : 4,
+      "gbs" : 94.63646546720202,
+      "kernel" : "v3 fused half quad",
+      "ms" : 0.519450000138022,
+      "pctPeak" : 61.85389899817125,
+      "res" : "12MP"
+    },
+    {
+      "bytesPerPx" : 4,
+      "gbs" : 98.58029393101268,
+      "kernel" : "copy u16 (roofline)",
+      "ms" : 1.9946750020608306,
+      "pctPeak" : 64.4315646607926,
+      "res" : "48MP"
+    },
+    {
+      "bytesPerPx" : 6,
+      "gbs" : 92.19180648708542,
+      "kernel" : "BLC pass only",
+      "ms" : 3.19934583385475,
+      "pctPeak" : 60.256082671297655,
+      "res" : "48MP"
+    },
+    {
+      "bytesPerPx" : 8,
+      "gbs" : 84.7190868218977,
+      "kernel" : "v1 naive LSC pass",
+      "ms" : 4.64206250035204,
+      "pctPeak" : 55.371952171174975,
+      "res" : "48MP"
+    },
+    {
+      "bytesPerPx" : 8,
+      "gbs" : 84.43926350719332,
+      "kernel" : "v2 sampler LSC pass",
+      "ms" : 4.657445833436213,
+      "pctPeak" : 55.18906111581263,
+      "res" : "48MP"
+    },
+    {
+      "bytesPerPx" : 8,
+      "gbs" : 90.20759720257986,
+      "kernel" : "v2h sampler fp16 tex",
+      "ms" : 4.3596250005066395,
+      "pctPeak" : 58.95921385789533,
+      "res" : "48MP"
+    },
+    {
+      "bytesPerPx" : 14,
+      "gbs" : 88.27114861827874,
+      "kernel" : "v1 pipeline BLC+LSC",
+      "ms" : 7.796712502022274,
+      "pctPeak" : 57.69356118841748,
+      "res" : "48MP"
+    },
+    {
+      "bytesPerPx" : 14,
+      "gbs" : 81.7510674967793,
+      "kernel" : "v2 pipeline BLC+LSC",
+      "ms" : 8.418541666469537,
+      "pctPeak" : 53.432070259332875,
+      "res" : "48MP"
+    },
+    {
+      "bytesPerPx" : 4,
+      "gbs" : 96.83305052936062,
+      "kernel" : "v3 fused half quad",
+      "ms" : 2.030666667269543,
+      "pctPeak" : 63.28957550938603,
+      "res" : "48MP"
+    }
+  ]
+}
